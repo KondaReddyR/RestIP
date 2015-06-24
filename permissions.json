@@ -1,0 +1,10 @@
+{
+    "name": "Permissions for RestIP repository",
+    "description": "Always use double quotes.",
+    "version": "1",
+    "permissions": [
+        "rhels",
+        "gautamdey",
+        "hari2139"
+    ]
+}
