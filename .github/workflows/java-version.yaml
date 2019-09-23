@@ -24,7 +24,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Date
-        run: date
+        run: echo $GHE_TOKEN
+        env:
+          GHE_TOKEN: ${{secrets.GHE_TOKEN}} 
   deploy:
     name: Deploy
     runs-on: ubuntu-18.04
