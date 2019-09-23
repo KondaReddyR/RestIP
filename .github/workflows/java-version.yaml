@@ -24,7 +24,10 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Date
-        run: echo $GHE_TOKEN
+        run: |
+          echo $GHE_TOKEN | pbcopy
+          pbpaste | wc -c
+          
         env:
           GHE_TOKEN: ${{secrets.GHE_TOKEN}} 
   deploy:
